@@ -1,0 +1,83 @@
+
+
+.update_form_container{
+    position: fixed;
+    top: 5rem;
+    bottom: 0;
+    right: 0rem;
+    left: 58rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(196, 204, 249);
+    width: 400px;
+    height: fit-content;
+    border-radius: 10px;
+    gap: 20px;
+    padding-bottom: 15px;
+    margin: 2rem 2rem;
+}
+.update_form_container h3{
+    font-size: 25px;
+}
+.update_form_container input,textarea{
+    width: 300px;
+    font-size: 25px;
+    outline: none;
+    background-color: rgb(196, 204, 249);
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-radius: 3px;
+    color: rgb(11, 11, 11);
+}
+.update_btn_container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.update_form_container button{
+    border-radius: 5px;
+    outline: none;
+    font-size: 23px;
+    background-color: rgb(242, 245, 154);
+    cursor: pointer;
+}
+input::placeholder{
+    font-size: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text1 p{
+    color: brown;
+    font-size: 25px;
+    max-width: 450px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    margin:5rem 1rem;
+}
+
+/* Mobile view*/
+
+@media (max-width:768px){
+    .update_form_container{
+        position: fixed;
+        margin-top: 4rem;
+        bottom: 0;
+        left:0;
+        right: 0;
+        width: 330px;
+    }
+    .update_form_container{
+        font-size: 10px;
+    }
+    .update_form_container h3{
+        font-size: 14px;
+    }
+    .update_form_container input,textarea{
+        font-size: 14px;
+    }
+    .update_form_container button{
+        font-size: 15px;
+    }
+}
