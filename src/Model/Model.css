@@ -2,16 +2,16 @@
 
 .update_form_container{
     position: fixed;
-    top: 5rem;
+    top: 6rem;
     bottom: 0;
-    right: 0rem;
-    left: 58rem;
+    left: 48rem;
+   /* left: 58rem; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color:rgb(196, 204, 249);
-    width: 400px;
+    width: 300px;
     height: fit-content;
     border-radius: 10px;
     gap: 20px;
@@ -19,11 +19,12 @@
     margin: 2rem 2rem;
 }
 .update_form_container h3{
-    font-size: 25px;
+    padding: 10px;
+    font-size: 20px;
 }
 .update_form_container input,textarea{
-    width: 300px;
-    font-size: 25px;
+    width: 200px;
+    font-size: 20px;
     outline: none;
     background-color: rgb(196, 204, 249);
     border-left: none;
@@ -65,8 +66,12 @@ input::placeholder{
         margin-top: 4rem;
         bottom: 0;
         left:0;
-        right: 0;
-        width: 330px;
+       /* right: 0; 
+        width: 330px; */
+        max-width:300px;
+        width: 100%;
+        right:2rem
+        
     }
     .update_form_container{
         font-size: 10px;

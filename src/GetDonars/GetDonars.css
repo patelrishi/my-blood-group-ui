@@ -43,11 +43,14 @@ th{
     text-align: left;
     font-weight: bold;
     font-size: larger;
+    max-width: 100px;
+
 }
 td{
     border-bottom: 2px solid #ddd;
     padding: 10px;
     font-size: small;
+    max-width: 100px;
 
 }
 tr{

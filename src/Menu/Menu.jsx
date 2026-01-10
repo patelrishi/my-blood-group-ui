@@ -7,6 +7,7 @@ import {Home} from '../Home/Home';
 import { Login } from '../Login/Login';
 
 export const Menu = () => {
+ 
   return (
     <div>
       <NavBar /><br/>

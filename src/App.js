@@ -10,7 +10,9 @@ function App() {
  const dispatch = useDispatch()
 
   useEffect(()=>{
+    if(typeof window !== 'undefined' && sessionStorage?.user){
     dispatch({type:'LOGIN', payload:{isLogIn: true,user:sessionStorage?.user }})//refresh also page keep login 
+    }
   },[])
 
   const isLoggedin = useSelector((state) => {

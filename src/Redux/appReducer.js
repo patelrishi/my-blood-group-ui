@@ -5,6 +5,7 @@ export const appReducer =(state=init,action)=>{
         case 'LOGIN':
             return {
                 ...state,
+                isLogIn: true,
                 ...action.payload
             }
         case 'MODEL':

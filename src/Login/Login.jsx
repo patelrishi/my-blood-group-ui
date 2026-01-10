@@ -13,19 +13,18 @@ export const Login = () => {
         const { id, value } = e.target;
         setData((prev) => ({ ...prev, [id]: value }))
     }
+
+    //login fun
     const handleClick = async () => {
         try {
-
             const res = await axios.post('https://blooddonarbackend.vercel.app/std/login/', data)
 
             if (res?.data?.length > 0) {
-                const user = res?.data?.[0]?.uid;
-                const token = res?.data?.[0]?.token;
-                sessionStorage.setItem('user', user)
-                sessionStorage.setItem('token', token)
+                const {uid,token }= res?.data?.[0];
+                sessionStorage.setItem('user', uid);
+                sessionStorage.setItem('token', token);
 
-                dispatch({ type: 'LOGIN', payload: { isLogIn: true, user, token } }) //store true or false value and user&token also
-
+                dispatch({ type:'LOGIN', payload:{ isLogIn:true, uid, token } }) //store true or false value and uid &token also
             }
         } catch (err) {
             console.error("login error :", err)
