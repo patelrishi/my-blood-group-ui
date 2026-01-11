@@ -49,16 +49,16 @@ span.title{
 }
 
 /*  MOBILE VIEW */
-@media (max-width: 768px) {
+@media (max-width: 980px) {
   .navbar {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    max-width:650px;
+    max-width:980px;
     height: 56px;
     padding: 6px 2px;
-    background-color: rgb(254, 132, 132);
+    background-color:rgb(225, 91, 86);
   } 
   .list_items{
     position: inherit;

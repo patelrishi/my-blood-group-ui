@@ -74,15 +74,15 @@ export const GetDonars = () => {
           <table className='table' >
             <thead>
               <tr>
-                <th>S.no</th>
-                <th>Name</th>
-                <th>Age</th>
-                <th>weight</th>
-                <th>Blood Group</th>
-                <th>Mobile</th>
-                <th>Location</th>
-                <th>Delete</th>
-                <th>Edit</th>
+                <th className='sn' >S.no</th>
+                <th className='nm'>Name</th>
+                <th className='ag' >Age</th>
+                <th className='wt' >weight</th>
+                <th className='bg' >Blood Group</th>
+                <th className='mn' >Mobile</th>
+                <th className='lc' >Location</th>
+                <th className='bt' >Delete</th>
+                <th className='bt' >Edit</th>
               </tr>
             </thead>
             <tbody>
@@ -91,13 +91,13 @@ export const GetDonars = () => {
                 data?.length > 0 && data.map((object, index) => {
                   const { name, age, weight, bloodgroup, mobile, location } = object;
                   return <tr key={index + 1} >
-                    <td>{index + 1}</td>
-                    <td>{name}</td>
-                    <td>{age || '-'}</td>
-                    <td>{weight || '-'}</td>
-                    <td>{bloodgroup || '-'}</td>
-                    <td>{mobile || '-'}</td>
-                    <td>{location || '-'}</td>
+                    <td className='sn' >{index + 1}</td>
+                    <td className='nm' >{name}</td>
+                    <td className='ag' >{age || '-'}</td>
+                    <td className='wt' >{weight || '-'}</td>
+                    <td className='bg' >{bloodgroup || '-'}</td>
+                    <td className='mn' >{mobile || '-'}</td>
+                    <td className='lc' >{location || '-'}</td>
                     <td><button onClick={() => handleDelete(object)}>Delete</button></td>
                     <td><button onClick={() => handleEdit(object)}>Edit</button></td>
                   </tr>

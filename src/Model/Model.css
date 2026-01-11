@@ -60,18 +60,15 @@ input::placeholder{
 
 /* Mobile view*/
 
-@media (max-width:768px){
+@media(max-width:768px){
     .update_form_container{
         position: fixed;
-        margin-top: 4rem;
+        margin-top: 3rem;
         bottom: 0;
-        left:0;
-       /* right: 0; 
-        width: 330px; */
-        max-width:300px;
+        left:0rem;
+        max-width:260px;
         width: 100%;
         right:2rem
-        
     }
     .update_form_container{
         font-size: 10px;
@@ -84,5 +81,9 @@ input::placeholder{
     }
     .update_form_container button{
         font-size: 15px;
+    }
+    .update_form_container button{
+        font-size: 10px;
+        padding: 5px;
     }
 }

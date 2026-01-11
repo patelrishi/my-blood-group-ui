@@ -59,9 +59,36 @@ tr{
 
 td button {
     background-color: rgb(177, 217, 238);
-    border-radius: 8px;
+    border-radius: 14px;
     font-size: 15px;
+    padding: 5px;
     cursor: pointer;
+}
+tr .sn{
+    color: rgb(200, 32, 32);
+}
+tr .nm{
+    color: rgb(188, 127, 37);
+    font-weight: 600;
+}
+tr .bg{
+    color:rgb(103, 50, 207);
+    font-weight: 600;
+}
+tr .ag{
+    color: rgb(172, 179, 34);
+}
+tr .wt{
+    color:rgb(30, 152, 19);
+}
+tr .mn{
+    color: rgb(148, 16, 117);
+}
+tr .lc{
+    color:rgb(152, 44, 19);
+}
+tr .bt{
+    color: rgb(89, 156, 189);
 }
 
 /* mobile view */
@@ -94,7 +121,8 @@ td button {
     td button {
     background-color: rgb(177, 217, 238);
     border-radius: 8px;
-    font-size: 10px;
+    font-size: 8px;
+    padding: 2px;
     cursor: pointer;
 }
 }

@@ -36,6 +36,7 @@
     background-color: palegreen;
     outline: none;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 /*mobile view*/
