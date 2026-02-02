@@ -1,13 +1,12 @@
 
 import './NavBar.css';
 import { NavLink } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch} from 'react-redux';
 import { useState } from 'react';
 
 export const NavBar = () => {
   const [list, setList] = useState(false)
   const dispatch = useDispatch()
-  const result = useSelector((state)=>state?.appReducer?.isLogIn)
     
   //logout func
   const handleLogOut = () => {

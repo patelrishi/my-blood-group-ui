@@ -1,7 +1,6 @@
 'use client'
 import React, { useState } from 'react'
 import './Register.css';
-import axios from 'axios';
 import { Ajax } from '../services/Ajax';
 
 export const Register = () => {        // for clearing all inputs
@@ -47,7 +46,7 @@ export const Register = () => {        // for clearing all inputs
         <div className='register_main_container'>
             <div className='text1' >
                 <p>Every drop of blood carries hope.<br />
-                    One donation can save multiple lives in moments of need.<br />
+                    One donation can save multiple lives in moments of need.<br/>
                     Be the reason someone smiles tomorrow.</p>
             </div>
             <div className='form_container'>
