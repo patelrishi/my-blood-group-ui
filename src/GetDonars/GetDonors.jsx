@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import './GetDonars.css';
+import './GetDonors.css';
 import { Ajax } from '../services/Ajax';
 import { useDispatch, useSelector } from 'react-redux';
 import { Model } from '../Model/Model';
 
-export const GetDonars = () => {
+export const GetDonors = () => {
   const [data, setData] = useState([]);
   const dispatch = useDispatch();
   const isShow = useSelector((state) => state?.appReducer?.isShowModel)

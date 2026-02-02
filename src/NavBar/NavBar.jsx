@@ -19,7 +19,7 @@ export const NavBar = () => {
            <div className={`list_items ${list ?'open' :''}`}> {/*means laptop view work proper if open mobile view listitems not appear whenever click 3lines it is true when list_items.open css work so open listitems */}
             <NavLink to='/'>Home</NavLink>
             <NavLink to='Register'>Register</NavLink>
-            <NavLink to='GetDonars'>Donors</NavLink>
+            <NavLink to='GetDonors'>Donors</NavLink>
           </div>
         
         <span className='title'> My Blood Group </span>

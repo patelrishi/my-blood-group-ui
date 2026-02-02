@@ -2,7 +2,7 @@ import React from 'react'
 import { Routes,Route } from 'react-router-dom';
 import { Register } from '../Register/Register';
 import { NavBar } from '../NavBar/NavBar';
-import { GetDonars } from '../GetDonars/GetDonars';
+import { GetDonors } from '../GetDonars/GetDonors';
 import {Home} from '../Home/Home';
 import { Login } from '../Login/Login';
 
@@ -14,7 +14,7 @@ export const Menu = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/Register' element={<Register />} />
-        <Route path='/GetDonors' element={<GetDonars />} />
+        <Route path='/GetDonors' element={<GetDonors />} />
         <Route path='/Login' element={<Login />} />
       </Routes>
     </div>
