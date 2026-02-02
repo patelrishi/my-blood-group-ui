@@ -13,12 +13,12 @@ function App() {
     if(typeof window !== 'undefined' && sessionStorage?.user){
     dispatch({type:'LOGIN', payload:{isLogIn: true,user:sessionStorage?.user }})//refresh also page keep login 
     }
-  },[])
+  },[dispatch])
 
   const isLoggedin = useSelector((state) => {
     return state.appReducer.isLogIn
   })
-  console.log("login", isLoggedin)
+  
   return (
     <div>
       <BrowserRouter>
