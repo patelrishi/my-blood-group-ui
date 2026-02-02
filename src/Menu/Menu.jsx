@@ -14,7 +14,7 @@ export const Menu = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/Register' element={<Register />} />
-        <Route path='/GetDonars' element={<GetDonars />} />
+        <Route path='/GetDonors' element={<GetDonars />} />
         <Route path='/Login' element={<Login />} />
       </Routes>
     </div>
