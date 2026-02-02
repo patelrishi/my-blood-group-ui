@@ -56,7 +56,7 @@ span.title{
     align-items: center;
     justify-content: space-between;
     max-width:980px;
-    height: 56px;
+    height: 66px;
     padding: 6px 2px;
     background-color:rgb(225, 91, 86);
   } 
@@ -65,11 +65,11 @@ span.title{
     display: none;   /* first time false so listitems not visible bcz this execute but display none so not visible*/
     flex-direction: column;
     align-items: baseline;
-    gap: 10px;
+    gap: 5px;
     max-width:580px;
     height: 130px;
     margin: 4rem;
-    margin-left: 24rem;
+    margin-left: 22rem;
     padding: 6px;
     background-color: rgba(238, 242, 238, 0.57);
   }
@@ -82,7 +82,7 @@ span.title{
   }
  .navbar .nav_btn{
   position: inherit;
-    margin-right:12rem;
+    margin-right:14rem;
     background-color: rgb(228, 245, 153);
   }
   .hamburger_icon{
@@ -90,7 +90,10 @@ span.title{
     display: block;
    cursor: pointer;
    margin: 2rem;
-   margin-left: 23rem;
+   font-size: 25px;
+   color: aliceblue;
+   margin-left: 22rem;
+   margin-top: 1.8rem;
 }
 .list_items.open{
   display: flex; /* whenever click 3lines it is execute (display flex so visible) and open listitems*/

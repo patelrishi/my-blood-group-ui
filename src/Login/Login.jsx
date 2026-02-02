@@ -46,6 +46,7 @@ export const Login = () => {
                     <div className='btn'>
                         <button onClick={handleClick} >LogIn</button>
                     </div>
+                    <span className='login-msg' >Note: Use the above credentials to Login</span>
                 </div>
             </div>
         </div>

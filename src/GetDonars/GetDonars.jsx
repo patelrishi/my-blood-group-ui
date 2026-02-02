@@ -15,7 +15,7 @@ export const GetDonars = () => {
       const res = await Ajax.sendGetReq("/std/getdata");
       const list = await res?.data
       setData(list)
-      console.log(data)
+    
     } catch (err) {
       console.log(err.message)
     }
@@ -25,11 +25,11 @@ export const GetDonars = () => {
   //delete the data function
   const handleDelete = async (row) => {
     try {
-     // alert(row.name)
+     
       const userInput = prompt('vamshi')
       if(userInput === 'vamshi'){
       const id = row._id;
-      const res = await Ajax.sendDeleteReq(`/std/delete-data/${id}`) //server side usind params 
+      const res = await Ajax.sendDeleteReq(`/std/delete-data/${id}`) //server side using params 
       const { acknowledged, deletedCount } = res?.data
       
       if (acknowledged && deletedCount) {
@@ -56,7 +56,7 @@ export const GetDonars = () => {
     <div className='get_bg_container' >
       <div className='get_container' >
         {data?.length > 0 ? " " :
-          <h4> &nbsp;If You want Donars List click the button</h4>
+          <h4> &nbsp;If You want Donors List click the button</h4>
         }
         <div className='get_btn_container'>
           <button className='get_btn' onClick={handleClick} >Get List</button>
