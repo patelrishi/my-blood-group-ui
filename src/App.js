@@ -7,7 +7,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 
 function App() {
- const dispatch = useDispatch()
+ const dispatch = useDispatch();
 
   useEffect(()=>{
     if(typeof window !== 'undefined' && sessionStorage?.user){

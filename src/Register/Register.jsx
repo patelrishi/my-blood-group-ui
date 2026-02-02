@@ -60,7 +60,7 @@ export const Register = () => {        // for clearing all inputs
                 <button onClick={handleClick} >Submit</button>
             </div>
             <div className='img1_con' >
-                <img src='pic.jpg' alt='image' />
+                <img src='pic.jpg' alt='imgs'/>
             </div>
         </div>
     )
